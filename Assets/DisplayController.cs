@@ -24,6 +24,6 @@ public class DisplayController : MonoBehaviour
 
     private void OnDisable()
     {
-        camTex.Stop();
+        if (camTex) camTex.Stop();
     }
 }
